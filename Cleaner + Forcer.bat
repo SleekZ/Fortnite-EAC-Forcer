@@ -59,24 +59,28 @@ REG ADD HKLM\SOFTWARE\Microsoft\Windows" "NT\CurrentVersion /v InstallDate /t RE
 REG ADD HKLM\SYSTEM\CurrentControlSet\Control\SystemInformation /v ComputerHardwareId /t REG_SZ /d {randomd%random%-%random%-%random%-%random%} /f
 date 08-22-19
 
-set /p id=What do you want?(eac/be):
+echo eac/be 1 is for people whos date format is Day/Month/Year and eac/be 2 mdy is Month/Day/Year.
+set /p id=What do you want?(eac1/eac2 or be1/be2):
+
+
+
  
 IF %id%==be cd %systemdrive%\Program Files (x86)\Epic Games\Launcher\Engine\Binaries\Win32
 IF %id%==be start epicgameslauncher.exe
 IF %id%==be TIMEOUT /T 3
-IF %id%==be date 08-19-19
+IF %id%==be date 19/19/19
 
 IF %id%==BE cd %systemdrive%\Program Files (x86)\Epic Games\Launcher\Engine\Binaries\Win32
 IF %id%==BE start epicgameslauncher.exe
 IF %id%==BE TIMEOUT /T 3
-IF %id%==BE date 08-19-19
+IF %id%==BE date 19/19/19
 
 IF %id%==eac cd %systemdrive%\Program Files (x86)\Epic Games\Launcher\Engine\Binaries\Win32
 IF %id%==eac start epicgameslauncher.exe
 IF %id%==eac TIMEOUT /T 3
-IF %id%==eac date 08-20-19
+IF %id%==eac date 19/19/19
 
 IF %id%==EAC cd %systemdrive%\Program Files (x86)\Epic Games\Launcher\Engine\Binaries\Win32
 IF %id%==EAC start epicgameslauncher.exe
 IF %id%==EAC TIMEOUT /T 3
-IF %id%==EAC date 08-20-19
+IF %id%==EAC date 19/19/19
