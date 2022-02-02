@@ -48,5 +48,5 @@ date 10-31-2021
 
 :No
 echo.
-echo Force EAC you fucking retard.
+echo Force EAC you monke.
 set /p pause=" "
